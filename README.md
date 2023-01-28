@@ -11,8 +11,10 @@ Scrape your data from banks / credit cards and upload to Money Tiger
 * `TIGER_URL`: Override the default Money Tiger URL
 
 ## Config
+
 JSON array of objects containing a company ID and credentials:
-```
+
+```json
 [
   {
     "company": "AAAA",
@@ -32,6 +34,8 @@ JSON array of objects containing a company ID and credentials:
 ]
 ```
 
+The list of valid company IDs can be found [here][1].
+
 ## Running
 Download and run the Docker image:
 ```
@@ -49,3 +53,5 @@ Via Docker:
 ```
 docker build . -t teste && docker run --rm -e API_TOKEN=TOKEN -e CONFIG=CONFIG teste
 ```
+
+[1]: https://github.com/eshaham/israeli-bank-scrapers/blob/82d6277d348180e5d61ad52f19fff23b0834fc5d/src/definitions.ts#L5-L22
