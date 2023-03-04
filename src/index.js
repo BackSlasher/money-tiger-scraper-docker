@@ -33,7 +33,7 @@ async function parse_args() {
   assert(config_raw);
   const config = await get_config(config_raw);
 
-  const tiger_url = process.env.TIGER_URL || "https://real.money-tiger.tech/api/import";
+  const tiger_url = process.env.TIGER_URL || "https://www.money-tiger.tech/api/import";
   const api_token = process.env.API_TOKEN;
   assert(api_token);
   const show_browser = Boolean(process.env.SHOW_BROWSER);
